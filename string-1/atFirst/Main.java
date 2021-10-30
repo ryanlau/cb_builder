@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        atFirst("hello"); // "he"
-        atFirst("hi"); // "hi"
-        atFirst("h"); // "h@"
+        System.out.println(atFirst("hello")); // "he"
+        System.out.println(atFirst("hi")); // "hi"
+        System.out.println(atFirst("h")); // "h@"
     }
 
     /*
@@ -12,6 +12,6 @@ public class Main {
      * the string length is less than 2, use '@' for the missing chars.
      */
     public static String atFirst(String str) {
-
+        
     }
 }

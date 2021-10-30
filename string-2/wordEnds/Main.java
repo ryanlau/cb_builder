@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        wordEnds("abcXY123XYijk", "XY"); // "c13i"
-        wordEnds("XY123XY", "XY"); // "13"
-        wordEnds("XY1XY", "XY"); // "11"
+        System.out.println(wordEnds("abcXY123XYijk", "XY")); // "c13i"
+        System.out.println(wordEnds("XY123XY", "XY")); // "13"
+        System.out.println(wordEnds("XY1XY", "XY")); // "11"
     }
 
     /*
@@ -14,6 +14,6 @@ public class Main {
      * a char may be included twice if it is between two words.
      */
     public static String wordEnds(String str, String word) {
-
+        
     }
 }

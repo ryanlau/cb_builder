@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        right2("Hello"); // "loHel"
-        right2("java"); // "vaja"
-        right2("Hi"); // "Hi"
+        System.out.println(right2("Hello")); // "loHel"
+        System.out.println(right2("java")); // "vaja"
+        System.out.println(right2("Hi")); // "Hi"
     }
 
     /*
@@ -12,6 +12,6 @@ public class Main {
      * are moved to the start. The string length will be at least 2.
      */
     public static String right2(String str) {
-
+        
     }
 }

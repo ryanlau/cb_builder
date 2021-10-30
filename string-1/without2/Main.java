@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        without2("HelloHe"); // "lloHe"
-        without2("HelloHi"); // "HelloHi"
-        without2("Hi"); // ""
+        System.out.println(without2("HelloHe")); // "lloHe"
+        System.out.println(without2("HelloHi")); // "HelloHi"
+        System.out.println(without2("Hi")); // ""
     }
 
     /*
@@ -14,6 +14,6 @@ public class Main {
      * Otherwise, return the original string unchanged.
      */
     public static String without2(String str) {
-
+        
     }
 }

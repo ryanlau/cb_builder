@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        seeColor("redxx"); // "red"
-        seeColor("xxred"); // ""
-        seeColor("blueTimes"); // "blue"
+        System.out.println(seeColor("redxx")); // "red"
+        System.out.println(seeColor("xxred")); // ""
+        System.out.println(seeColor("blueTimes")); // "blue"
     }
 
     /*
@@ -12,6 +12,6 @@ public class Main {
      * color string, otherwise return the empty string.
      */
     public static String seeColor(String str) {
-
+        
     }
 }

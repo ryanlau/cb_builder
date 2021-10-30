@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        xyBalance("aaxbby"); // true
-        xyBalance("aaxbb"); // false
-        xyBalance("yaaxbb"); // false
+        System.out.println(xyBalance("aaxbby")); // true
+        System.out.println(xyBalance("aaxbb")); // false
+        System.out.println(xyBalance("yaaxbb")); // false
     }
 
     /*
@@ -14,6 +14,6 @@ public class Main {
      * true if the given string is xy-balanced.
      */
     public static boolean xyBalance(String str) {
-
+        
     }
 }

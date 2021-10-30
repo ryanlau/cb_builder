@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        repeatFront("Chocolate", 4); // "ChocChoChC"
-        repeatFront("Chocolate", 3); // "ChoChC"
-        repeatFront("Ice Cream", 2); // "IcI"
+        System.out.println(repeatFront("Chocolate", 4)); // "ChocChoChC"
+        System.out.println(repeatFront("Chocolate", 3)); // "ChoChC"
+        System.out.println(repeatFront("Ice Cream", 2)); // "IcI"
     }
 
     /*
@@ -14,6 +14,6 @@ public class Main {
      * the string, inclusive (i.e. n >= 0 and n <= str.length()).
      */
     public static String repeatFront(String str, int n) {
-
+        
     }
 }

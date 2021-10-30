@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        plusOut("12xy34", "xy"); // "++xy++"
-        plusOut("12xy34", "1"); // "1+++++"
-        plusOut("12xy34xyabcxy", "xy"); // "++xy++xy+++xy"
+        System.out.println(plusOut("12xy34", "xy")); // "++xy++"
+        System.out.println(plusOut("12xy34", "1")); // "1+++++"
+        System.out.println(plusOut("12xy34xyabcxy", "xy")); // "++xy++xy+++xy"
     }
 
     /*
@@ -13,6 +13,6 @@ public class Main {
      * except for appearances of the word string which are preserved unchanged.
      */
     public static String plusOut(String str, String word) {
-
+        
     }
 }

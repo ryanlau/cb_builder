@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        getSandwich("breadjambread"); // "jam"
-        getSandwich("xxbreadjambreadyy"); // "jam"
-        getSandwich("xxbreadyy"); // ""
+        System.out.println(getSandwich("breadjambread")); // "jam"
+        System.out.println(getSandwich("xxbreadjambreadyy")); // "jam"
+        System.out.println(getSandwich("xxbreadyy")); // ""
     }
 
     /*
@@ -14,6 +14,6 @@ public class Main {
      * of bread.
      */
     public static String getSandwich(String str) {
-
+        
     }
 }

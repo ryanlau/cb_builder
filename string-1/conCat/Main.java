@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        conCat("abc", "cat"); // "abcat"
-        conCat("dog", "cat"); // "dogcat"
-        conCat("abc", ""); // "abc"
+        System.out.println(conCat("abc", "cat")); // "abcat"
+        System.out.println(conCat("dog", "cat")); // "dogcat"
+        System.out.println(conCat("abc", "")); // "abc"
     }
 
     /*
@@ -13,6 +13,6 @@ public class Main {
      * then omit one of the chars, so "abc" and "cat" yields "abcat".
      */
     public static String conCat(String a, String b) {
-
+        
     }
 }

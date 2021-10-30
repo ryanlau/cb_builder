@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        withoutEnd("Hello"); // "ell"
-        withoutEnd("java"); // "av"
-        withoutEnd("coding"); // "odin"
+        System.out.println(withoutEnd("Hello")); // "ell"
+        System.out.println(withoutEnd("java")); // "av"
+        System.out.println(withoutEnd("coding")); // "odin"
     }
 
     /*
@@ -12,6 +12,6 @@ public class Main {
      * "Hello" yields "ell". The string length will be at least 2.
      */
     public static String withoutEnd(String str) {
-
+        
     }
 }

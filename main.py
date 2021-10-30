@@ -27,7 +27,7 @@ for link in links:
     table = soup.find_all("table")[2]
     for sibling in table.find("tr").find("td").next_element.next_sibling.next_siblings:
         if " →" in sibling:
-            testcases.append(sibling.replace(" →", "; //"))
+            testcases.append(f'System.out.println({sibling.replace(" → ", "); // ")}')
     testcases = "\n        ".join(testcases)
 
     comments = wrap(soup.find(class_="max2").text, 73)
@@ -49,7 +49,7 @@ public class Main {{
     {}
      */
     {} {{
-
+        
     }}
 }}
 """.format(

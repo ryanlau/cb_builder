@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        lastTwo("coding"); // "codign"
-        lastTwo("cat"); // "cta"
-        lastTwo("ab"); // "ba"
+        System.out.println(lastTwo("coding")); // "codign"
+        System.out.println(lastTwo("cat")); // "cta"
+        System.out.println(lastTwo("ab")); // "ba"
     }
 
     /*
@@ -12,6 +12,6 @@ public class Main {
      * if present, are swapped, so "coding" yields "codign".
      */
     public static String lastTwo(String str) {
-
+        
     }
 }

@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        minCat("Hello", "Hi"); // "loHi"
-        minCat("Hello", "java"); // "ellojava"
-        minCat("java", "Hello"); // "javaello"
+        System.out.println(minCat("Hello", "Hi")); // "loHi"
+        System.out.println(minCat("Hello", "java")); // "ellojava"
+        System.out.println(minCat("java", "Hello")); // "javaello"
     }
 
     /*
@@ -14,6 +14,6 @@ public class Main {
      * string. So "Hello" and "Hi" yield "loHi". The strings may be any length.
      */
     public static String minCat(String a, String b) {
-
+        
     }
 }

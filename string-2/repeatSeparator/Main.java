@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        repeatSeparator("Word", "X", 3); // "WordXWordXWord"
-        repeatSeparator("This", "And", 2); // "ThisAndThis"
-        repeatSeparator("This", "And", 1); // "This"
+        System.out.println(repeatSeparator("Word", "X", 3)); // "WordXWordXWord"
+        System.out.println(repeatSeparator("This", "And", 2)); // "ThisAndThis"
+        System.out.println(repeatSeparator("This", "And", 1)); // "This"
     }
 
     /*
@@ -12,6 +12,6 @@ public class Main {
      * count occurrences of the word, separated by the separator string.
      */
     public static String repeatSeparator(String word, String sep, int count) {
-
+        
     }
 }

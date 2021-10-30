@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        extraFront("Hello"); // "HeHeHe"
-        extraFront("ab"); // "ababab"
-        extraFront("H"); // "HHH"
+        System.out.println(extraFront("Hello")); // "HeHeHe"
+        System.out.println(extraFront("ab")); // "ababab"
+        System.out.println(extraFront("H")); // "HHH"
     }
 
     /*
@@ -13,6 +13,6 @@ public class Main {
      * than 2 chars, use whatever is there.
      */
     public static String extraFront(String str) {
-
+        
     }
 }

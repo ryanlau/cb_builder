@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        sameStarChar("xy*yzz"); // true
-        sameStarChar("xy*zzz"); // false
-        sameStarChar("*xa*az"); // true
+        System.out.println(sameStarChar("xy*yzz")); // true
+        System.out.println(sameStarChar("xy*zzz")); // false
+        System.out.println(sameStarChar("*xa*az")); // true
     }
 
     /*
@@ -12,6 +12,6 @@ public class Main {
      * both immediately before and after the star, they are the same.
      */
     public static boolean sameStarChar(String str) {
-
+        
     }
 }

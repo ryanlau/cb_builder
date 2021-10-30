@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        firstTwo("Hello"); // "He"
-        firstTwo("abcdefg"); // "ab"
-        firstTwo("ab"); // "ab"
+        System.out.println(firstTwo("Hello")); // "He"
+        System.out.println(firstTwo("abcdefg")); // "ab"
+        System.out.println(firstTwo("ab")); // "ab"
     }
 
     /*
@@ -15,6 +15,6 @@ public class Main {
      * a string.
      */
     public static String firstTwo(String str) {
-
+        
     }
 }

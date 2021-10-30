@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        middleTwo("string"); // "ri"
-        middleTwo("code"); // "od"
-        middleTwo("Practice"); // "ct"
+        System.out.println(middleTwo("string")); // "ri"
+        System.out.println(middleTwo("code")); // "od"
+        System.out.println(middleTwo("Practice")); // "ct"
     }
 
     /*
@@ -13,6 +13,6 @@ public class Main {
      * least 2.
      */
     public static String middleTwo(String str) {
-
+        
     }
 }

@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        prefixAgain("abXYabc", 1); // true
-        prefixAgain("abXYabc", 2); // true
-        prefixAgain("abXYabc", 3); // false
+        System.out.println(prefixAgain("abXYabc", 1)); // true
+        System.out.println(prefixAgain("abXYabc", 2)); // true
+        System.out.println(prefixAgain("abXYabc", 3)); // false
     }
 
     /*
@@ -14,6 +14,6 @@ public class Main {
      * 1..str.length().
      */
     public static boolean prefixAgain(String str, int n) {
-
+        
     }
 }

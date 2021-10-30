@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        zipZap("zipXzap"); // "zpXzp"
-        zipZap("zopzop"); // "zpzp"
-        zipZap("zzzopzop"); // "zzzpzp"
+        System.out.println(zipZap("zipXzap")); // "zpXzp"
+        System.out.println(zipZap("zopzop")); // "zpzp"
+        System.out.println(zipZap("zzzopzop")); // "zzzpzp"
     }
 
     /*
@@ -13,6 +13,6 @@ public class Main {
      * words, the middle letter is gone, so "zipXzap" yields "zpXzp".
      */
     public static String zipZap(String str) {
-
+        
     }
 }

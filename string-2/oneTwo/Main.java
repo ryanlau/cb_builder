@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        oneTwo("abc"); // "bca"
-        oneTwo("tca"); // "cat"
-        oneTwo("tcagdo"); // "catdog"
+        System.out.println(oneTwo("abc")); // "bca"
+        System.out.println(oneTwo("tca")); // "cat"
+        System.out.println(oneTwo("tcagdo")); // "catdog"
     }
 
     /*
@@ -14,6 +14,6 @@ public class Main {
      * group of fewer than 3 chars at the end.
      */
     public static String oneTwo(String str) {
-
+        
     }
 }

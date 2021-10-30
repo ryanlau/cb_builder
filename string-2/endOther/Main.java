@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        endOther("Hiabc", "abc"); // true
-        endOther("AbC", "HiaBc"); // true
-        endOther("abc", "abXabc"); // true
+        System.out.println(endOther("Hiabc", "abc")); // true
+        System.out.println(endOther("AbC", "HiaBc")); // true
+        System.out.println(endOther("abc", "abXabc")); // true
     }
 
     /*
@@ -14,6 +14,6 @@ public class Main {
      * str.toLowerCase() returns the lowercase version of a string.
      */
     public static boolean endOther(String a, String b) {
-
+        
     }
 }

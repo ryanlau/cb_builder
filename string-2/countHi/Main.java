@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        countHi("abc hi ho"); // 1
-        countHi("ABChi hi"); // 2
-        countHi("hihi"); // 2
+        System.out.println(countHi("abc hi ho")); // 1
+        System.out.println(countHi("ABChi hi")); // 2
+        System.out.println(countHi("hihi")); // 2
     }
 
     /*
@@ -12,6 +12,6 @@ public class Main {
      * given string.
      */
     public static int countHi(String str) {
-
+        
     }
 }

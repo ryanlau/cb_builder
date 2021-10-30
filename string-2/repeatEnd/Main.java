@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        repeatEnd("Hello", 3); // "llollollo"
-        repeatEnd("Hello", 2); // "lolo"
-        repeatEnd("Hello", 1); // "o"
+        System.out.println(repeatEnd("Hello", 3)); // "llollollo"
+        System.out.println(repeatEnd("Hello", 2)); // "lolo"
+        System.out.println(repeatEnd("Hello", 1)); // "o"
     }
 
     /*
@@ -13,6 +13,6 @@ public class Main {
      * the length of the string, inclusive.
      */
     public static String repeatEnd(String str, int n) {
-
+        
     }
 }

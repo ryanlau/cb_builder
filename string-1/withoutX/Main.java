@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        withoutX("xHix"); // "Hi"
-        withoutX("xHi"); // "Hi"
-        withoutX("Hxix"); // "Hxi"
+        System.out.println(withoutX("xHix")); // "Hi"
+        System.out.println(withoutX("xHi")); // "Hi"
+        System.out.println(withoutX("Hxix")); // "Hxi"
     }
 
     /*
@@ -12,6 +12,6 @@ public class Main {
      * without those 'x' chars, and otherwise return the string unchanged.
      */
     public static String withoutX(String str) {
-
+        
     }
 }

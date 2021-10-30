@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        deFront("Hello"); // "llo"
-        deFront("java"); // "va"
-        deFront("away"); // "aay"
+        System.out.println(deFront("Hello")); // "llo"
+        System.out.println(deFront("java")); // "va"
+        System.out.println(deFront("away")); // "aay"
     }
 
     /*
@@ -13,6 +13,6 @@ public class Main {
      * string may be any length. Harder than it looks.
      */
     public static String deFront(String str) {   {
-
+        
     }
 }

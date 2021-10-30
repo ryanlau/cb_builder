@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        theEnd("Hello", true); // "H"
-        theEnd("Hello", false); // "o"
-        theEnd("oh", true); // "o"
+        System.out.println(theEnd("Hello", true)); // "H"
+        System.out.println(theEnd("Hello", false)); // "o"
+        System.out.println(theEnd("oh", true)); // "o"
     }
 
     /*
@@ -13,6 +13,6 @@ public class Main {
      * will be non-empty.
      */
     public static String theEnd(String str, boolean front) {
-
+        
     }
 }

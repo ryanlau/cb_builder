@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        withoutX2("xHi"); // "Hi"
-        withoutX2("Hxi"); // "Hi"
-        withoutX2("Hi"); // "Hi"
+        System.out.println(withoutX2("xHi")); // "Hi"
+        System.out.println(withoutX2("Hxi")); // "Hi"
+        System.out.println(withoutX2("Hi")); // "Hi"
     }
 
     /*
@@ -13,6 +13,6 @@ public class Main {
      * unchanged. This is a little harder than it looks.
      */
     public static String withoutX2(String str) {
-
+        
     }
 }

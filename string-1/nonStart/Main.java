@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        nonStart("Hello", "There"); // "ellohere"
-        nonStart("java", "code"); // "avaode"
-        nonStart("shotl", "java"); // "hotlava"
+        System.out.println(nonStart("Hello", "There")); // "ellohere"
+        System.out.println(nonStart("java", "code")); // "avaode"
+        System.out.println(nonStart("shotl", "java")); // "hotlava"
     }
 
     /*
@@ -12,6 +12,6 @@ public class Main {
      * of each. The strings will be at least length 1.
      */
     public static String nonStart(String a, String b) {
-
+        
     }
 }

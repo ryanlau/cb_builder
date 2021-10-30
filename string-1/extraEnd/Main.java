@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        extraEnd("Hello"); // "lololo"
-        extraEnd("ab"); // "ababab"
-        extraEnd("Hi"); // "HiHiHi"
+        System.out.println(extraEnd("Hello")); // "lololo"
+        System.out.println(extraEnd("ab")); // "ababab"
+        System.out.println(extraEnd("Hi")); // "HiHiHi"
     }
 
     /*
@@ -12,6 +12,6 @@ public class Main {
      * of the original string. The string length will be at least 2.
      */
     public static String extraEnd(String str) {
-
+        
     }
 }

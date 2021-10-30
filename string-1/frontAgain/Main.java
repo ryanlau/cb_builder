@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        frontAgain("edited"); // true
-        frontAgain("edit"); // false
-        frontAgain("ed"); // true
+        System.out.println(frontAgain("edited")); // true
+        System.out.println(frontAgain("edit")); // false
+        System.out.println(frontAgain("ed")); // true
     }
 
     /*
@@ -12,6 +12,6 @@ public class Main {
      * appear at the end of the string, such as with "edited".
      */
     public static boolean frontAgain(String str) {
-
+        
     }
 }

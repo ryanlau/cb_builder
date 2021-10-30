@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        helloName("Bob"); // "Hello Bob!"
-        helloName("Alice"); // "Hello Alice!"
-        helloName("X"); // "Hello X!"
+        System.out.println(helloName("Bob")); // "Hello Bob!"
+        System.out.println(helloName("Alice")); // "Hello Alice!"
+        System.out.println(helloName("X")); // "Hello X!"
     }
 
     /*
@@ -12,6 +12,6 @@ public class Main {
      * Bob!".
      */
     public static String helloName(String name) {
-
+        
     }
 }

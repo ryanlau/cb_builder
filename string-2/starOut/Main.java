@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        starOut("ab*cd"); // "ad"
-        starOut("ab**cd"); // "ad"
-        starOut("sm*eilly"); // "silly"
+        System.out.println(starOut("ab*cd")); // "ad"
+        System.out.println(starOut("ab**cd")); // "ad"
+        System.out.println(starOut("sm*eilly")); // "silly"
     }
 
     /*
@@ -13,6 +13,6 @@ public class Main {
      * So "ab*cd" yields "ad" and "ab**cd" also yields "ad".
      */
     public static String starOut(String str) {
-
+        
     }
 }

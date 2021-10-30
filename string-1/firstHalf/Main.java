@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        firstHalf("WooHoo"); // "Woo"
-        firstHalf("HelloThere"); // "Hello"
-        firstHalf("abcdef"); // "abc"
+        System.out.println(firstHalf("WooHoo")); // "Woo"
+        System.out.println(firstHalf("HelloThere")); // "Hello"
+        System.out.println(firstHalf("abcdef")); // "abc"
     }
 
     /*
@@ -12,6 +12,6 @@ public class Main {
      * "WooHoo" yields "Woo".
      */
     public static String firstHalf(String str) {
-
+        
     }
 }

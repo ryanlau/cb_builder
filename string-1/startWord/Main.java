@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        startWord("hippo", "hi"); // "hi"
-        startWord("hippo", "xip"); // "hip"
-        startWord("hippo", "i"); // "h"
+        System.out.println(startWord("hippo", "hi")); // "hi"
+        System.out.println(startWord("hippo", "xip")); // "hip"
+        System.out.println(startWord("hippo", "i")); // "h"
     }
 
     /*
@@ -16,6 +16,6 @@ public class Main {
      * word will be at least length 1.
      */
     public static String startWord(String str, String word) {
-
+        
     }
 }

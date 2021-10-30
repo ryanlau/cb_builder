@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        catDog("catdog"); // true
-        catDog("catcat"); // false
-        catDog("1cat1cadodog"); // true
+        System.out.println(catDog("catdog")); // true
+        System.out.println(catDog("catcat")); // false
+        System.out.println(catDog("1cat1cadodog")); // true
     }
 
     /*
@@ -12,6 +12,6 @@ public class Main {
      * in the given string.
      */
     public static boolean catDog(String str) {
-
+        
     }
 }

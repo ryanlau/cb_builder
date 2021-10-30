@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        bobThere("abcbob"); // true
-        bobThere("b9b"); // true
-        bobThere("bac"); // false
+        System.out.println(bobThere("abcbob")); // true
+        System.out.println(bobThere("b9b")); // true
+        System.out.println(bobThere("bac")); // false
     }
 
     /*
@@ -12,6 +12,6 @@ public class Main {
      * middle 'o' char can be any char.
      */
     public static boolean bobThere(String str) {
-
+        
     }
 }

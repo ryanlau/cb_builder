@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        makeAbba("Hi", "Bye"); // "HiByeByeHi"
-        makeAbba("Yo", "Alice"); // "YoAliceAliceYo"
-        makeAbba("What", "Up"); // "WhatUpUpWhat"
+        System.out.println(makeAbba("Hi", "Bye")); // "HiByeByeHi"
+        System.out.println(makeAbba("Yo", "Alice")); // "YoAliceAliceYo"
+        System.out.println(makeAbba("What", "Up")); // "WhatUpUpWhat"
     }
 
     /*
@@ -12,6 +12,6 @@ public class Main {
      * the order abba, e.g. "Hi" and "Bye" returns "HiByeByeHi".
      */
     public static String makeAbba(String a, String b) {
-
+        
     }
 }

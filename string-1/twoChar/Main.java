@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        twoChar("java", 0); // "ja"
-        twoChar("java", 2); // "va"
-        twoChar("java", 3); // "ja"
+        System.out.println(twoChar("java", 0)); // "ja"
+        System.out.println(twoChar("java", 2)); // "va"
+        System.out.println(twoChar("java", 3)); // "ja"
     }
 
     /*
@@ -13,6 +13,6 @@ public class Main {
      * length 2, use the first 2 chars. The string length will be at least 2.
      */
     public static String twoChar(String str, int index) {
-
+        
     }
 }

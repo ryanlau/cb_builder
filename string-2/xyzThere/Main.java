@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        xyzThere("abcxyz"); // true
-        xyzThere("abc.xyz"); // false
-        xyzThere("xyz.abc"); // true
+        System.out.println(xyzThere("abcxyz")); // true
+        System.out.println(xyzThere("abc.xyz")); // false
+        System.out.println(xyzThere("xyz.abc")); // true
     }
 
     /*
@@ -13,6 +13,6 @@ public class Main {
      * "x.xyz" does not.
      */
     public static boolean xyzThere(String str) {
-
+        
     }
 }

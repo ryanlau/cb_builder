@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        lastChars("last", "chars"); // "ls"
-        lastChars("yo", "java"); // "ya"
-        lastChars("hi", ""); // "h@"
+        System.out.println(lastChars("last", "chars")); // "ls"
+        System.out.println(lastChars("yo", "java")); // "ya"
+        System.out.println(lastChars("hi", "")); // "h@"
     }
 
     /*
@@ -13,6 +13,6 @@ public class Main {
      * is length 0, use '@' for its missing char.
      */
     public static String lastChars(String a, String b) {
-
+        
     }
 }

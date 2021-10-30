@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        makeOutWord("<<>>", "Yay"); // "<<Yay>>"
-        makeOutWord("<<>>", "WooHoo"); // "<<WooHoo>>"
-        makeOutWord("[[]]", "word"); // "[[word]]"
+        System.out.println(makeOutWord("<<>>", "Yay")); // "<<Yay>>"
+        System.out.println(makeOutWord("<<>>", "WooHoo")); // "<<WooHoo>>"
+        System.out.println(makeOutWord("[[]]", "word")); // "[[word]]"
     }
 
     /*
@@ -14,6 +14,6 @@ public class Main {
      * at index i and going up to but not including index j.
      */
     public static String makeOutWord(String out, String word) {
-
+        
     }
 }

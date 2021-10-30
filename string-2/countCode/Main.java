@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        countCode("aaacodebbb"); // 1
-        countCode("codexxcode"); // 2
-        countCode("cozexxcope"); // 2
+        System.out.println(countCode("aaacodebbb")); // 1
+        System.out.println(countCode("codexxcode")); // 2
+        System.out.println(countCode("cozexxcope")); // 2
     }
 
     /*
@@ -13,6 +13,6 @@ public class Main {
      * "cooe" count.
      */
     public static int countCode(String str) {
-
+        
     }
 }

@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        doubleChar("The"); // "TThhee"
-        doubleChar("AAbb"); // "AAAAbbbb"
-        doubleChar("Hi-There"); // "HHii--TThheerree"
+        System.out.println(doubleChar("The")); // "TThhee"
+        System.out.println(doubleChar("AAbb")); // "AAAAbbbb"
+        System.out.println(doubleChar("Hi-There")); // "HHii--TThheerree"
     }
 
     /*
@@ -12,6 +12,6 @@ public class Main {
      * there are two chars.
      */
     public static String doubleChar(String str) {
-
+        
     }
 }

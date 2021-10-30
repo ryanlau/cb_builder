@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        xyzMiddle("AAxyzBB"); // true
-        xyzMiddle("AxyzBB"); // true
-        xyzMiddle("AxyzBBB"); // false
+        System.out.println(xyzMiddle("AAxyzBB")); // true
+        System.out.println(xyzMiddle("AxyzBB")); // true
+        System.out.println(xyzMiddle("AxyzBBB")); // false
     }
 
     /*
@@ -13,6 +13,6 @@ public class Main {
      * "xyz" must differ by at most one. This problem is harder than it looks.
      */
     public static boolean xyzMiddle(String str) {
-
+        
     }
 }

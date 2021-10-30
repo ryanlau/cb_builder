@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        mixString("abc", "xyz"); // "axbycz"
-        mixString("Hi", "There"); // "HTihere"
-        mixString("xxxx", "There"); // "xTxhxexre"
+        System.out.println(mixString("abc", "xyz")); // "axbycz"
+        System.out.println(mixString("Hi", "There")); // "HTihere"
+        System.out.println(mixString("xxxx", "There")); // "xTxhxexre"
     }
 
     /*
@@ -13,6 +13,6 @@ public class Main {
      * and so on. Any leftover chars go at the end of the result.
      */
     public static String mixString(String a, String b) {
-
+        
     }
 }

@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        middleThree("Candy"); // "and"
-        middleThree("and"); // "and"
-        middleThree("solving"); // "lvi"
+        System.out.println(middleThree("Candy")); // "and"
+        System.out.println(middleThree("and")); // "and"
+        System.out.println(middleThree("solving")); // "lvi"
     }
 
     /*
@@ -12,6 +12,6 @@ public class Main {
      * so "Candy" yields "and". The string length will be at least 3.
      */
     public static String middleThree(String str) {
-
+        
     }
 }

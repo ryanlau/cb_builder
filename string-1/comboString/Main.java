@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        comboString("Hello", "hi"); // "hiHellohi"
-        comboString("hi", "Hello"); // "hiHellohi"
-        comboString("aaa", "b"); // "baaab"
+        System.out.println(comboString("Hello", "hi")); // "hiHellohi"
+        System.out.println(comboString("hi", "Hello")); // "hiHellohi"
+        System.out.println(comboString("aaa", "b")); // "baaab"
     }
 
     /*
@@ -14,6 +14,6 @@ public class Main {
      * (length 0).
      */
     public static String comboString(String a, String b) {
-
+        
     }
 }

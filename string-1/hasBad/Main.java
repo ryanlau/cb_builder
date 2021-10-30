@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        hasBad("badxx"); // true
-        hasBad("xbadxx"); // true
-        hasBad("xxbadxx"); // false
+        System.out.println(hasBad("badxx")); // true
+        System.out.println(hasBad("xbadxx")); // true
+        System.out.println(hasBad("xxbadxx")); // false
     }
 
     /*
@@ -14,6 +14,6 @@ public class Main {
      * strings.
      */
     public static boolean hasBad(String str) {
-
+        
     }
 }

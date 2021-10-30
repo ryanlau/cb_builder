@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        makeTags("i", "Yay"); // "<i>Yay</i>"
-        makeTags("i", "Hello"); // "<i>Hello</i>"
-        makeTags("cite", "Yay"); // "<cite>Yay</cite>"
+        System.out.println(makeTags("i", "Yay")); // "<i>Yay</i>"
+        System.out.println(makeTags("i", "Hello")); // "<i>Hello</i>"
+        System.out.println(makeTags("cite", "Yay")); // "<cite>Yay</cite>"
     }
 
     /*
@@ -14,6 +14,6 @@ public class Main {
      * string with tags around the word, e.g. "<i>Yay</i>".
      */
     public static String makeTags(String tag, String word) {
-
+        
     }
 }
