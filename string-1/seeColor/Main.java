@@ -7,7 +7,7 @@ public class Main {
         System.out.println(seeColor("blueTimes")); // "blue"
     }
 
-    /*
+    /**
      * Given a string, if the string begins with "red" or "blue" return that
      * color string, otherwise return the empty string.
      */

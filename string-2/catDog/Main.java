@@ -7,7 +7,7 @@ public class Main {
         System.out.println(catDog("1cat1cadodog")); // true
     }
 
-    /*
+    /**
      * Return true if the string "cat" and "dog" appear the same number of times
      * in the given string.
      */

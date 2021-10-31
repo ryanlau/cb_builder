@@ -7,7 +7,7 @@ public class Main {
         System.out.println(withoutX("Hxix")); // "Hxi"
     }
 
-    /*
+    /**
      * Given a string, if the first or last chars are 'x', return the string
      * without those 'x' chars, and otherwise return the string unchanged.
      */

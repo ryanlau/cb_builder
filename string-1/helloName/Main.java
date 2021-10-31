@@ -7,7 +7,7 @@ public class Main {
         System.out.println(helloName("X")); // "Hello X!"
     }
 
-    /*
+    /**
      * Given a string name, e.g. "Bob", return a greeting of the form "Hello
      * Bob!".
      */

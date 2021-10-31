@@ -7,7 +7,7 @@ public class Main {
         System.out.println(atFirst("h")); // "h@"
     }
 
-    /*
+    /**
      * Given a string, return a string length 2 made of its first 2 chars. If
      * the string length is less than 2, use '@' for the missing chars.
      */

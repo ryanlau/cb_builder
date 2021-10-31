@@ -7,7 +7,7 @@ public class Main {
         System.out.println(wordEnds("XY1XY", "XY")); // "11"
     }
 
-    /*
+    /**
      * Given a string and a non-empty word string, return a string made of each
      * char just before and just after every appearance of the word in the
      * string. Ignore cases where there is no char before or after the word, and

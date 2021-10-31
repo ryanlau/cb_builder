@@ -7,7 +7,7 @@ public class Main {
         System.out.println(countHi("hihi")); // 2
     }
 
-    /*
+    /**
      * Return the number of times that the string "hi" appears anywhere in the
      * given string.
      */

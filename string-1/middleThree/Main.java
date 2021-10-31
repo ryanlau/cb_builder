@@ -7,7 +7,7 @@ public class Main {
         System.out.println(middleThree("solving")); // "lvi"
     }
 
-    /*
+    /**
      * Given a string of odd length, return the string length 3 from its middle,
      * so "Candy" yields "and". The string length will be at least 3.
      */

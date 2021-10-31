@@ -7,7 +7,7 @@ public class Main {
         System.out.println(minCat("java", "Hello")); // "javaello"
     }
 
-    /*
+    /**
      * Given two strings, append them together (known as "concatenation") and
      * return the result. However, if the strings are different lengths, omit
      * chars from the longer string so it is the same length as the shorter

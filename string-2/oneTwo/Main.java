@@ -7,7 +7,7 @@ public class Main {
         System.out.println(oneTwo("tcagdo")); // "catdog"
     }
 
-    /*
+    /**
      * Given a string, compute a new string by moving the first char to come
      * after the next two chars, so "abc" yields "bca". Repeat this process for
      * each subsequent group of 3 chars, so "abcdef" yields "bcaefd". Ignore any

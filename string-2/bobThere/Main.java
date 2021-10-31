@@ -7,7 +7,7 @@ public class Main {
         System.out.println(bobThere("bac")); // false
     }
 
-    /*
+    /**
      * Return true if the given string contains a "bob" string, but where the
      * middle 'o' char can be any char.
      */

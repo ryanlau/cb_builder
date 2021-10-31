@@ -7,7 +7,7 @@ public class Main {
         System.out.println(doubleChar("Hi-There")); // "HHii--TThheerree"
     }
 
-    /*
+    /**
      * Given a string, return a string where for every char in the original,
      * there are two chars.
      */

@@ -7,7 +7,7 @@ public class Main {
         System.out.println(theEnd("oh", true)); // "o"
     }
 
-    /*
+    /**
      * Given a string, return a string length 1 from its front, unless front is
      * false, in which case return a string length 1 from its back. The string
      * will be non-empty.

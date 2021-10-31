@@ -7,7 +7,7 @@ public class Main {
         System.out.println(startWord("hippo", "i")); // "h"
     }
 
-    /*
+    /**
      * Given a string and a second "word" string, we'll say that the word
      * matches the string if it appears at the front of the string, except its
      * first char does not need to match exactly. On a match, return the front

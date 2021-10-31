@@ -7,7 +7,7 @@ public class Main {
         System.out.println(xyBalance("yaaxbb")); // false
     }
 
-    /*
+    /**
      * We'll say that a String is xy-balanced if for all the 'x' chars in the
      * string, there exists a 'y' char somewhere later in the string. So "xxy"
      * is balanced, but "xyx" is not. One 'y' can balance multiple 'x's. Return

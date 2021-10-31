@@ -7,7 +7,7 @@ public class Main {
         System.out.println(endsLy("oddy")); // false
     }
 
-    /*
+    /**
      * Given a string, return true if it ends in "ly".
      */
     public static boolean endsLy(String str) {

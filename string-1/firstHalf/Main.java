@@ -7,7 +7,7 @@ public class Main {
         System.out.println(firstHalf("abcdef")); // "abc"
     }
 
-    /*
+    /**
      * Given a string of even length, return the first half. So the string
      * "WooHoo" yields "Woo".
      */
