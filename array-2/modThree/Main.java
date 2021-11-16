@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(modThree([2, 1, 3, 5])); // true
-        System.out.println(modThree([2, 1, 2, 5])); // false
-        System.out.println(modThree([2, 4, 2, 5])); // true
+        System.out.println(modThree(new int[] {2, 1, 3, 5})); // true
+        System.out.println(modThree(new int[] {2, 1, 2, 5})); // false
+        System.out.println(modThree(new int[] {2, 4, 2, 5})); // true
     }
 
     /**

@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(tenRun([2, 10, 3, 4, 20, 5])); // [2, 10, 10, 10, 20, 20]
-        System.out.println(tenRun([10, 1, 20, 2])); // [10, 10, 20, 20]
-        System.out.println(tenRun([10, 1, 9, 20])); // [10, 10, 10, 20]
+        System.out.println(tenRun(new int[] {2, 10, 3, 4, 20, 5})); // [2, 10, 10, 10, 20, 20]
+        System.out.println(tenRun(new int[] {10, 1, 20, 2})); // [10, 10, 20, 20]
+        System.out.println(tenRun(new int[] {10, 1, 9, 20})); // [10, 10, 10, 20]
     }
 
     /**

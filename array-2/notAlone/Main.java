@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(notAlone([1, 2, 3], 2)); // [1, 3, 3]
-        System.out.println(notAlone([1, 2, 3, 2, 5, 2], 2)); // [1, 3, 3, 5, 5, 2]
-        System.out.println(notAlone([3, 4], 3)); // [3, 4]
+        System.out.println(notAlone(new int[] {1, 2, 3})); // [1, 3, 3]
+        System.out.println(notAlone(new int[] {1, 2, 3, 2, 5, 2})); // [1, 3, 3, 5, 5, 2]
+        System.out.println(notAlone(new int[] {3, 4})); // [3, 4]
     }
 
     /**

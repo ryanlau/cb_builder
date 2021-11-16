@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(shiftLeft([6, 2, 5, 3])); // [2, 5, 3, 6]
-        System.out.println(shiftLeft([1, 2])); // [2, 1]
-        System.out.println(shiftLeft([1])); // [1]
+        System.out.println(shiftLeft(new int[] {6, 2, 5, 3})); // [2, 5, 3, 6]
+        System.out.println(shiftLeft(new int[] {1, 2})); // [2, 1]
+        System.out.println(shiftLeft(new int[] {1})); // [1]
     }
 
     /**

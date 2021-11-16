@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(lucky13([0, 2, 4])); // true
-        System.out.println(lucky13([1, 2, 3])); // false
-        System.out.println(lucky13([1, 2, 4])); // false
+        System.out.println(lucky13(new int[] {0, 2, 4})); // true
+        System.out.println(lucky13(new int[] {1, 2, 3})); // false
+        System.out.println(lucky13(new int[] {1, 2, 4})); // false
     }
 
     /**

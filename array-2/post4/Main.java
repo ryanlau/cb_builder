@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(post4([2, 4, 1, 2])); // [1, 2]
-        System.out.println(post4([4, 1, 4, 2])); // [2]
-        System.out.println(post4([4, 4, 1, 2, 3])); // [1, 2, 3]
+        System.out.println(post4(new int[] {2, 4, 1, 2})); // [1, 2]
+        System.out.println(post4(new int[] {4, 1, 4, 2})); // [2]
+        System.out.println(post4(new int[] {4, 4, 1, 2, 3})); // [1, 2, 3]
     }
 
     /**

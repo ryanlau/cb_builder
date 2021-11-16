@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(sameEnds([5, 6, 45, 99, 13, 5, 6], 1)); // false
-        System.out.println(sameEnds([5, 6, 45, 99, 13, 5, 6], 2)); // true
-        System.out.println(sameEnds([5, 6, 45, 99, 13, 5, 6], 3)); // false
+        System.out.println(sameEnds(new int[] {5, 6, 45, 99, 13, 5, 6})); // false
+        System.out.println(sameEnds(new int[] {5, 6, 45, 99, 13, 5, 6})); // true
+        System.out.println(sameEnds(new int[] {5, 6, 45, 99, 13, 5, 6})); // false
     }
 
     /**

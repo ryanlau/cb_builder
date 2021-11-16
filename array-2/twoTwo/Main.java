@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(twoTwo([4, 2, 2, 3])); // true
-        System.out.println(twoTwo([2, 2, 4])); // true
-        System.out.println(twoTwo([2, 2, 4, 2])); // false
+        System.out.println(twoTwo(new int[] {4, 2, 2, 3})); // true
+        System.out.println(twoTwo(new int[] {2, 2, 4})); // true
+        System.out.println(twoTwo(new int[] {2, 2, 4, 2})); // false
     }
 
     /**

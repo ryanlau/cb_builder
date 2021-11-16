@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(more14([1, 4, 1])); // true
-        System.out.println(more14([1, 4, 1, 4])); // false
-        System.out.println(more14([1, 1])); // true
+        System.out.println(more14(new int[] {1, 4, 1})); // true
+        System.out.println(more14(new int[] {1, 4, 1, 4})); // false
+        System.out.println(more14(new int[] {1, 1})); // true
     }
 
     /**

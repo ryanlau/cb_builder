@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(only14([1, 4, 1, 4])); // true
-        System.out.println(only14([1, 4, 2, 4])); // false
-        System.out.println(only14([1, 1])); // true
+        System.out.println(only14(new int[] {1, 4, 1, 4})); // true
+        System.out.println(only14(new int[] {1, 4, 2, 4})); // false
+        System.out.println(only14(new int[] {1, 1})); // true
     }
 
     /**

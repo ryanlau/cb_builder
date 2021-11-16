@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(no14([1, 2, 3])); // true
-        System.out.println(no14([1, 2, 3, 4])); // false
-        System.out.println(no14([2, 3, 4])); // true
+        System.out.println(no14(new int[] {1, 2, 3})); // true
+        System.out.println(no14(new int[] {1, 2, 3, 4})); // false
+        System.out.println(no14(new int[] {2, 3, 4})); // true
     }
 
     /**

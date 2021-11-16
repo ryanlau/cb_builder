@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(tripleUp([1, 4, 5, 6, 2])); // true
-        System.out.println(tripleUp([1, 2, 3])); // true
-        System.out.println(tripleUp([1, 2, 4])); // false
+        System.out.println(tripleUp(new int[] {1, 4, 5, 6, 2})); // true
+        System.out.println(tripleUp(new int[] {1, 2, 3})); // true
+        System.out.println(tripleUp(new int[] {1, 2, 4})); // false
     }
 
     /**

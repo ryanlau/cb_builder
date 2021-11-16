@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(zeroMax([0, 5, 0, 3])); // [5, 5, 3, 3]
-        System.out.println(zeroMax([0, 4, 0, 3])); // [3, 4, 3, 3]
-        System.out.println(zeroMax([0, 1, 0])); // [1, 1, 0]
+        System.out.println(zeroMax(new int[] {0, 5, 0, 3})); // [5, 5, 3, 3]
+        System.out.println(zeroMax(new int[] {0, 4, 0, 3})); // [3, 4, 3, 3]
+        System.out.println(zeroMax(new int[] {0, 1, 0})); // [1, 1, 0]
     }
 
     /**

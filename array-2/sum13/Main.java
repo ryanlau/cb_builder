@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(sum13([1, 2, 2, 1])); // 6
-        System.out.println(sum13([1, 1])); // 2
-        System.out.println(sum13([1, 2, 2, 1, 13])); // 6
+        System.out.println(sum13(new int[] {1, 2, 2, 1})); // 6
+        System.out.println(sum13(new int[] {1, 1})); // 2
+        System.out.println(sum13(new int[] {1, 2, 2, 1, 13})); // 6
     }
 
     /**

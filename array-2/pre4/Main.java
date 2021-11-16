@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(pre4([1, 2, 4, 1])); // [1, 2]
-        System.out.println(pre4([3, 1, 4])); // [3, 1]
-        System.out.println(pre4([1, 4, 4])); // [1]
+        System.out.println(pre4(new int[] {1, 2, 4, 1})); // [1, 2]
+        System.out.println(pre4(new int[] {3, 1, 4})); // [3, 1]
+        System.out.println(pre4(new int[] {1, 4, 4})); // [1]
     }
 
     /**

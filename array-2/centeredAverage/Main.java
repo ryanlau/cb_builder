@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(centeredAverage([1, 2, 3, 4, 100])); // 3
-        System.out.println(centeredAverage([1, 1, 5, 5, 10, 8, 7])); // 5
-        System.out.println(centeredAverage([-10, -4, -2, -4, -2, 0])); // -3
+        System.out.println(centeredAverage(new int[] {1, 2, 3, 4, 100})); // 3
+        System.out.println(centeredAverage(new int[] {1, 1, 5, 5, 10, 8, 7})); // 5
+        System.out.println(centeredAverage(new int[] {-10, -4, -2, -4, -2, 0})); // -3
     }
 
     /**

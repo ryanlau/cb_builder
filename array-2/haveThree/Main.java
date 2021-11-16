@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(haveThree([3, 1, 3, 1, 3])); // true
-        System.out.println(haveThree([3, 1, 3, 3])); // false
-        System.out.println(haveThree([3, 4, 3, 3, 4])); // false
+        System.out.println(haveThree(new int[] {3, 1, 3, 1, 3})); // true
+        System.out.println(haveThree(new int[] {3, 1, 3, 3})); // false
+        System.out.println(haveThree(new int[] {3, 4, 3, 3, 4})); // false
     }
 
     /**

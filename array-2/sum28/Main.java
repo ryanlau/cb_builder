@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(sum28([2, 3, 2, 2, 4, 2])); // true
-        System.out.println(sum28([2, 3, 2, 2, 4, 2, 2])); // false
-        System.out.println(sum28([1, 2, 3, 4])); // false
+        System.out.println(sum28(new int[] {2, 3, 2, 2, 4, 2})); // true
+        System.out.println(sum28(new int[] {2, 3, 2, 2, 4, 2, 2})); // false
+        System.out.println(sum28(new int[] {1, 2, 3, 4})); // false
     }
 
     /**

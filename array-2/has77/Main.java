@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(has77([1, 7, 7])); // true
-        System.out.println(has77([1, 7, 1, 7])); // true
-        System.out.println(has77([1, 7, 1, 1, 7])); // false
+        System.out.println(has77(new int[] {1, 7, 7})); // true
+        System.out.println(has77(new int[] {1, 7, 1, 7})); // true
+        System.out.println(has77(new int[] {1, 7, 1, 1, 7})); // false
     }
 
     /**

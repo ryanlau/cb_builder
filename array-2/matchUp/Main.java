@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(matchUp([1, 2, 3], [2, 3, 10])); // 2
-        System.out.println(matchUp([1, 2, 3], [2, 3, 5])); // 3
-        System.out.println(matchUp([1, 2, 3], [2, 3, 3])); // 2
+        System.out.println(matchUp(new int[] {1, 2, 3}, new int[] {2, 3, 10})); // 2
+        System.out.println(matchUp(new int[] {1, 2, 3}, new int[] {2, 3, 5})); // 3
+        System.out.println(matchUp(new int[] {1, 2, 3}, new int[] {2, 3, 3})); // 2
     }
 
     /**

@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(bigDiff([10, 3, 5, 6])); // 7
-        System.out.println(bigDiff([7, 2, 10, 9])); // 8
-        System.out.println(bigDiff([2, 10, 7, 2])); // 8
+        System.out.println(bigDiff(new int[] {10, 3, 5, 6})); // 7
+        System.out.println(bigDiff(new int[] {7, 2, 10, 9})); // 8
+        System.out.println(bigDiff(new int[] {2, 10, 7, 2})); // 8
     }
 
     /**

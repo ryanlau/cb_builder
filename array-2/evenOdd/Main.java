@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(evenOdd([1, 0, 1, 0, 0, 1, 1])); // [0, 0, 0, 1, 1, 1, 1]
-        System.out.println(evenOdd([3, 3, 2])); // [2, 3, 3]
-        System.out.println(evenOdd([2, 2, 2])); // [2, 2, 2]
+        System.out.println(evenOdd(new int[] {1, 0, 1, 0, 0, 1, 1})); // [0, 0, 0, 1, 1, 1, 1]
+        System.out.println(evenOdd(new int[] {3, 3, 2})); // [2, 3, 3]
+        System.out.println(evenOdd(new int[] {2, 2, 2})); // [2, 2, 2]
     }
 
     /**
