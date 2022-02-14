@@ -1,39 +1,65 @@
 import os
+import sys
 from textwrap import wrap
 
 import requests
 from bs4 import BeautifulSoup
 
-from queue import LifoQueue
 
-topic_url = "https://codingbat.com/java/Array-2"
+if len(sys.argv) == 1:
+    topic_url = "https://codingbat.com/java/String-1"
+else:
+    topic_url = f"https://codingbat.com/java/{sys.argv[1]}"
+
+
+
 topic = topic_url.split("/")[-1].lower()
 
-def reformat_method_call(method_call_str):
-    method_name = method_call_str[:method_call_str.find("(")]
-    method_params_string = method_call_str[method_call_str.find("(") + 1:method_call_str.rfind(" → ") - 1]
-    expected_output = method_call_str[method_call_str.rfind(" → ") + 3:]
 
-    stack = LifoQueue()
+def reformat_method_call(method_call_str):
+    method_name = method_call_str[: method_call_str.find("(")]
+    method_params_string = method_call_str[
+        method_call_str.find("(") + 1 : method_call_str.rfind(" → ") - 1
+    ]
+    expected_output = method_call_str[method_call_str.rfind(" → ") + 3 :]
+
+    array_param = False
+    skip_next = False
 
     params = []
 
-    method_param = "new int[] {"
+    param = ""
 
     for character in method_params_string:
+        if skip_next:
+            skip_next = False
+            continue
+
         if character == "[":
-            stack.put(character)
+            array_param = True
+            param = "new int[] {"
+            continue
 
-        elif character == "]":
-            stack.get()
-            if stack.empty():
-                method_param += "}"
-                params.append(method_param)
-                method_param = "new int[] {"
+        if character == "]":
+            param += "}"
+            params.append(param)
+            array_param = False
+            param = ""
+            skip_next = True
+            continue
 
+        if array_param == False:
+            if character == ",":
+                params.append(param)
+                param = ""
+                skip_next = True
+            else:
+                param += character
         else:
-            if not stack.empty():
-                method_param += character
+            param += character
+
+    if param != "":
+        params.append(param)
 
     method_call = f"{method_name}({', '.join(params)})); // {expected_output}"
 
@@ -58,9 +84,11 @@ for link in links:
 
     testcases = []
     table = soup.find_all("table")[2]
-    for method_call in table.find("tr").find("td").next_element.next_sibling.next_siblings:
+    for method_call in (
+        table.find("tr").find("td").next_element.next_sibling.next_siblings
+    ):
         if " →" in method_call:
-            testcases.append(f'System.out.println({reformat_method_call(method_call)}')
+            testcases.append(f"System.out.println({reformat_method_call(method_call)}")
     testcases = "\n        ".join(testcases)
 
     comments = wrap(soup.find(class_="max2").text, 73)
@@ -95,4 +123,3 @@ public class Main {{
         file.write(skele)
 
     print(f"created {topic}/{problem}/Main.java")
-

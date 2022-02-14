@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(isEverywhere(new int[] {1, 2, 1, 3})); // true
-        System.out.println(isEverywhere(new int[] {1, 2, 1, 3})); // false
-        System.out.println(isEverywhere(new int[] {1, 2, 1, 3, 4})); // false
+        System.out.println(isEverywhere(new int[] {1, 2, 1, 3},  1)); // true
+        System.out.println(isEverywhere(new int[] {1, 2, 1, 3},  2)); // false
+        System.out.println(isEverywhere(new int[] {1, 2, 1, 3, 4},  1)); // false
     }
 
     /**

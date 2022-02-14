@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(fizzBuzz()); // ["1", "2", "Fizz", "4", "Buzz"]
-        System.out.println(fizzBuzz()); // ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7"]
-        System.out.println(fizzBuzz()); // ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz"]
+        System.out.println(fizzBuzz(1, 6)); // ["1", "2", "Fizz", "4", "Buzz"]
+        System.out.println(fizzBuzz(1, 8)); // ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7"]
+        System.out.println(fizzBuzz(1, 11)); // ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz"]
     }
 
     /**
