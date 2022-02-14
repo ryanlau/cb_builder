@@ -4,8 +4,41 @@ from textwrap import wrap
 import requests
 from bs4 import BeautifulSoup
 
-topic_url = "https://codingbat.com/java/String-1"
+from queue import LifoQueue
+
+topic_url = "https://codingbat.com/java/Array-2"
 topic = topic_url.split("/")[-1].lower()
+
+def reformat_method_call(method_call_str):
+    method_name = method_call_str[:method_call_str.find("(")]
+    method_params_string = method_call_str[method_call_str.find("(") + 1:method_call_str.rfind(" → ") - 1]
+    expected_output = method_call_str[method_call_str.rfind(" → ") + 3:]
+
+    stack = LifoQueue()
+
+    params = []
+
+    method_param = "new int[] {"
+
+    for character in method_params_string:
+        if character == "[":
+            stack.put(character)
+
+        elif character == "]":
+            stack.get()
+            if stack.empty():
+                method_param += "}"
+                params.append(method_param)
+                method_param = "new int[] {"
+
+        else:
+            if not stack.empty():
+                method_param += character
+
+    method_call = f"{method_name}({', '.join(params)})); // {expected_output}"
+
+    return method_call
+
 
 resp = requests.get(topic_url).text
 soup = BeautifulSoup(resp, "html.parser")
@@ -25,9 +58,9 @@ for link in links:
 
     testcases = []
     table = soup.find_all("table")[2]
-    for sibling in table.find("tr").find("td").next_element.next_sibling.next_siblings:
-        if " →" in sibling:
-            testcases.append(f'System.out.println({sibling.replace(" → ", "); // ")}')
+    for method_call in table.find("tr").find("td").next_element.next_sibling.next_siblings:
+        if " →" in method_call:
+            testcases.append(f'System.out.println({reformat_method_call(method_call)}')
     testcases = "\n        ".join(testcases)
 
     comments = wrap(soup.find(class_="max2").text, 73)
@@ -62,3 +95,4 @@ public class Main {{
         file.write(skele)
 
     print(f"created {topic}/{problem}/Main.java")
+
