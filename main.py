@@ -7,14 +7,11 @@ from bs4 import BeautifulSoup
 
 
 if len(sys.argv) == 1:
-    topic_url = "https://codingbat.com/java/String-1"
+    topic_url = "https://codingbat.com/python/Warmup-1"
 else:
-    topic_url = f"https://codingbat.com/java/{sys.argv[1]}"
-
-
+    topic_url = f"https://codingbat.com/python/{sys.argv[1]}"
 
 topic = topic_url.split("/")[-1].lower()
-
 
 def reformat_method_call(method_call_str):
     method_name = method_call_str[: method_call_str.find("(")]
@@ -23,45 +20,7 @@ def reformat_method_call(method_call_str):
     ]
     expected_output = method_call_str[method_call_str.rfind(" → ") + 3 :]
 
-    array_param = False
-    skip_next = False
-
-    params = []
-
-    param = ""
-
-    for character in method_params_string:
-        if skip_next:
-            skip_next = False
-            continue
-
-        if character == "[":
-            array_param = True
-            param = "new int[] {"
-            continue
-
-        if character == "]":
-            param += "}"
-            params.append(param)
-            array_param = False
-            param = ""
-            skip_next = True
-            continue
-
-        if array_param == False:
-            if character == ",":
-                params.append(param)
-                param = ""
-                skip_next = True
-            else:
-                param += character
-        else:
-            param += character
-
-    if param != "":
-        params.append(param)
-
-    method_call = f"{method_name}({', '.join(params)})); // {expected_output}"
+    method_call = f"{method_name}({method_params_string})) # {expected_output}"
 
     return method_call
 
@@ -88,38 +47,37 @@ for link in links:
         table.find("tr").find("td").next_element.next_sibling.next_siblings
     ):
         if " →" in method_call:
-            testcases.append(f"System.out.println({reformat_method_call(method_call)}")
-    testcases = "\n        ".join(testcases)
+            testcases.append(f"print({reformat_method_call(method_call)}")
+    testcases = "\n".join(testcases)
 
-    comments = wrap(soup.find(class_="max2").text, 73)
-    comments = " * " + "\n     * ".join(comments)
+    comments = wrap(soup.find(class_="max2").text, 80)
+    comments = "\n".join(comments)
 
     ace_line = soup.find("div", id="ace_div").text
-    ace_line = ace_line.replace("public", "public static", 1)
-    ace_line = ace_line.split("\n")[0]
-    ace_line = ace_line[:-2]
+    ace_line = ace_line.strip()
 
-    skele = """// {}
+    skele = """# {}
 
-public class Main {{
-    public static void main(String[] args) {{
-        {}
-    }}
+\"\"\"
+{}
+\"\"\"
+{}
+    
 
-    /**
-    {}
-     */
-    {} {{
-        
-    }}
-}}
+# test cases: do not edit
+{}
+
 """.format(
-        resp.url, testcases, comments, ace_line
+        resp.url, comments, ace_line, testcases
     )
 
-    os.makedirs(f"{topic}/{problem}")
 
-    with open(f"{topic}/{problem}/Main.java", mode="w") as file:
+    try:
+        os.makedirs(f"{topic}")
+    except:
+        pass
+
+    with open(f"{topic}/{problem}.py", mode="w") as file:
         file.write(skele)
 
-    print(f"created {topic}/{problem}/Main.java")
+    print(f"created {topic}/{problem}.py")
